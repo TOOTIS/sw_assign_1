@@ -7,13 +7,15 @@
 4. 
 5. See **"BankAccountProgram/BankAccount.h"** file
 6. class constructors are called when an instance is created, class destructors are called when an object is deleted
-7. ```c++
+7.  Code
+	```c++
 	BankAccount::BankAccount()
 	{
 		m_name     		= "no name";
 		m_accountNumber = "invalid";
 		m_balance		= 0;
 	}
+	```
 
 8. A default constructor is a constructor that is used to create an object when you don’t provide explicit initialization values. The advantage of default constructor is to make the object member variables have reasonable values
 9. see **"stock20_modified.h"**
