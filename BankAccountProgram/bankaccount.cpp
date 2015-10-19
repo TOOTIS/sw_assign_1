@@ -26,10 +26,21 @@ void BankAccount::display() const
 
 void BankAccount::deposit(const float amount)
 {
-    m_balance += amount;
+    if(amount > 0)
+    {
+        m_balance += amount;
+    }
 }
 
 float BankAccount::withdraw(const float amount)
 {
-    m_balance -= amount;
+    if(m_balance > amount)
+    {
+        m_balance -= amount;
+        return amount;
+    }
+    else
+    {
+        return 0;
+    }
 }
